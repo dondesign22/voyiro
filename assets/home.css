@@ -127,3 +127,10 @@ html[lang="ru"] .h-hero .lede,html[lang="my"] .h-hero .lede{font-size:clamp(15px
 html[lang="my"] .h-hero .copy{gap:12px}
 html[lang="ru"] .h-head h2,html[lang="ru"] .split h2,html[lang="ru"] .band h2{font-size:clamp(28px,3.4vw,44px)}
 html[lang="my"] .h-head h2,html[lang="my"] .split h2,html[lang="my"] .band h2{font-size:clamp(24px,2.8vw,38px);line-height:1.5}
+/* Asset 02 และ 03: แสดงภาพเต็มสัดส่วน ไม่ครอป */
+.split .media.full{aspect-ratio:1672/941}
+.band{display:flex;flex-direction:column-reverse}
+.band>img{position:static;display:block;width:min(1152px,calc(100% - 48px));height:auto;aspect-ratio:1672/941;margin:0 auto 96px;border-radius:28px}
+.band::before{content:none}
+.band .wrap{padding-block:112px 48px;width:100%}
+@media (max-width:960px){.band .wrap{padding-block:72px 32px}.band>img{margin-bottom:64px}}

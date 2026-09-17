@@ -279,7 +279,7 @@ html[lang="my"] h1,html[lang="my"] h2{line-height:1.5}
 /* ภาพประกอบในหน้า */
 .shot{position:relative;margin:48px 0 0;border-radius:var(--r-lg);overflow:hidden;background:var(--mist)}
 .grid>.shot{margin:0}
-.shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover}
 .shot figcaption{position:absolute;right:14px;bottom:10px;font-size:12px;color:rgba(255,255,255,.85);text-shadow:0 1px 3px rgba(0,0,0,.6)}
 /* ความร่วมมือกับสหกรณ์ (หน้าเครือข่าย) */
 .cases{align-items:start}
@@ -298,14 +298,16 @@ html[lang="my"] h1,html[lang="my"] h2{line-height:1.5}
 .case dt{color:var(--slate)}.case dd{margin:0;font-weight:600}
 .interest{margin-top:32px;padding:24px 28px;border-radius:var(--r-lg);background:var(--mist);display:grid;gap:6px}
 .interest h3{font-size:18px;color:var(--indigo)}
-/* ภาพหัวหน้าเพจ */
-.page-hero.has-img{padding-block:96px 88px}
-.page-hero-img{position:absolute;inset:0 0 0 auto;width:62%;height:100%;object-fit:cover;z-index:0}
-.page-hero.has-img::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--indigo) 38%,rgba(38,34,107,.82) 52%,rgba(38,34,107,.2) 80%,rgba(38,34,107,0) 100%)}
+/* ภาพหัวหน้าเพจ: แสดงภาพเต็ม ไม่ครอปคนหรือรถ */
+.page-hero.has-img{padding-block:72px}
 .page-hero.has-img .hero-bg{display:none}
-.page-hero.has-img>*:not(.page-hero-img){position:relative;z-index:2}
+.page-hero.has-img .wrap{position:relative;z-index:1;min-height:calc(min(46vw,600px) * 941 / 1672)}
+.page-hero.has-img .wrap>*{max-width:calc(100% - min(46vw,600px) - 48px)}
+.page-hero-img{position:absolute;z-index:2;top:50%;transform:translateY(-50%);right:max(24px,calc((100% - 1152px) / 2));width:min(46vw,600px);height:auto;aspect-ratio:1672/941;border-radius:var(--r-lg);box-shadow:0 24px 60px rgba(0,0,0,.35)}
 @media (max-width:960px){
-  .page-hero.has-img{padding-block:260px 56px}
-  .page-hero-img{width:100%;height:300px;inset:0 0 auto 0}
-  .page-hero.has-img::before{background:linear-gradient(180deg,rgba(38,34,107,0) 0,rgba(38,34,107,.3) 160px,var(--indigo) 300px)}
+  .page-hero.has-img{padding-block:24px 56px}
+  .page-hero-img{position:static;transform:none;display:block;width:calc(100% - 48px);margin:0 auto 32px}
+  .page-hero.has-img .wrap{min-height:0}
+  .page-hero.has-img .wrap>*{max-width:none}
 }
+
