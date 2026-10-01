@@ -312,3 +312,9 @@ html[lang="my"] h1,html[lang="my"] h2{line-height:1.5}
 }
 
 .case .thanks{margin:10px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:14.5px;color:var(--slate);line-height:1.6}
+/* อบรมคนขับ (หน้าเครือข่าย) */
+.training{margin-top:40px;padding:28px;border-radius:var(--r-lg);background:var(--mist)}
+.training h3{font-size:20px;color:var(--indigo)}
+.training>p{margin:8px 0 0;color:var(--slate);max-width:72ch}
+.tgal{margin-top:20px;gap:12px}
+.tgal .shot{margin:0}
