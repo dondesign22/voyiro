@@ -134,3 +134,15 @@ html[lang="my"] .h-head h2,html[lang="my"] .split h2,html[lang="my"] .band h2{fo
 .band::before{content:none}
 .band .wrap{padding-block:112px 48px;width:100%}
 @media (max-width:960px){.band .wrap{padding-block:72px 32px}.band>img{margin-bottom:64px}}
+/* วิดีโอแนะนำบนหน้าแรก */
+.h-hero .wrap{display:flex;align-items:center;gap:48px}
+.h-hero .copy{flex:1 1 560px}
+.h-video{flex:0 0 auto;width:min(290px,26vw);display:grid;gap:10px;justify-items:center}
+.h-video video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:24px;background:var(--night);box-shadow:0 24px 60px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.25)}
+.h-video .vlink{color:#fff;font-size:14px;font-weight:600;text-decoration:none}
+.h-video .vlink:hover{color:var(--marigold)}
+@media (max-width:960px){
+  .h-hero{min-height:0}
+  .h-hero .wrap{flex-direction:column;align-items:stretch;padding-block:40px 48px}
+  .h-video{width:min(260px,70vw);justify-self:center}
+}
