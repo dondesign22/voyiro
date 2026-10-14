@@ -25,12 +25,12 @@
 <a class="skip" href="#main" style="position:absolute;left:-999px">ข้ามไปเนื้อหา</a>
 <header class="site-header"><div class="wrap">
   <a class="logo" href="index.html" aria-label="voyiro หน้าแรก"><img src="assets/voyiro-horizontal-indigo-marigold.svg" alt="voyiro" width="98" height="30"></a>
-  <nav class="nav" aria-label="เมนูหลัก"><a href="ride.html" aria-current=page>ผู้โดยสาร</a><a href="drivers.html">คนขับ</a><a href="cooperatives.html">สหกรณ์เดินรถ</a><a href="partners.html">พาร์ตเนอร์</a><a href="network.html">เครือข่ายไทยและอาเซียน</a><a href="safety.html">ความปลอดภัย</a><a href="music.html">เพลง</a><a href="about.html">เกี่ยวกับเรา</a></nav>
+  <nav class="nav" aria-label="เมนูหลัก"><a href="ride.html" aria-current=page>ผู้โดยสาร</a><a href="trips.html">ทริป</a><a href="drivers.html">คนขับ</a><a href="cooperatives.html">สหกรณ์เดินรถ</a><a href="partners.html">พาร์ตเนอร์</a><a href="network.html">เครือข่ายไทยและอาเซียน</a><a href="safety.html">ความปลอดภัย</a><a href="music.html">เพลง</a><a href="about.html">เกี่ยวกับเรา</a></nav>
   <div class="head-actions">
     <a class="link" href="help.html">ช่วยเหลือ</a>
     <details class="langsw"><summary aria-label="ภาษา"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></svg><span>ไทย</span></summary><div><a href="ride.html" lang="th" aria-current=true>ไทย</a><a href="en/ride.html" lang="en">English</a></div></details>
     <a class="btn btn-primary" href="contact.html">ร่วมงานกับเรา</a>
-    <details class="menu"><summary>เมนู</summary><nav aria-label="เมนู"><a href="ride.html" aria-current=page>ผู้โดยสาร</a><a href="drivers.html">คนขับ</a><a href="cooperatives.html">สหกรณ์เดินรถ</a><a href="partners.html">พาร์ตเนอร์</a><a href="network.html">เครือข่ายไทยและอาเซียน</a><a href="safety.html">ความปลอดภัย</a><a href="music.html">เพลง</a><a href="about.html">เกี่ยวกับเรา</a><a href="help.html">ช่วยเหลือ</a><a href="contact.html">ติดต่อเรา</a><div class="menu-langs"><a href="ride.html" lang="th" aria-current=true>ไทย</a><a href="en/ride.html" lang="en">English</a></div></nav></details>
+    <details class="menu"><summary>เมนู</summary><nav aria-label="เมนู"><a href="ride.html" aria-current=page>ผู้โดยสาร</a><a href="trips.html">ทริป</a><a href="drivers.html">คนขับ</a><a href="cooperatives.html">สหกรณ์เดินรถ</a><a href="partners.html">พาร์ตเนอร์</a><a href="network.html">เครือข่ายไทยและอาเซียน</a><a href="safety.html">ความปลอดภัย</a><a href="music.html">เพลง</a><a href="about.html">เกี่ยวกับเรา</a><a href="help.html">ช่วยเหลือ</a><a href="contact.html">ติดต่อเรา</a><div class="menu-langs"><a href="ride.html" lang="th" aria-current=true>ไทย</a><a href="en/ride.html" lang="en">English</a></div></nav></details>
   </div>
 </div></header>
 <main id="main">
@@ -65,27 +65,49 @@
 
 <section class="on-mist" id="vehicles">
   <div class="wrap">
-    <div class="head"><span class="eyebrow">อัตราค่าโดยสาร</span><h2>ราคาคำนวณจากระยะทาง แสดงก่อนเรียกทุกครั้ง</h2><p>อัตราเริ่มต้นสำหรับโครงการนำร่องเชียงใหม่ ราคาที่เห็นก่อนยืนยันคือราคาที่จ่าย</p></div>
-    <table class="table">
-      <tr><th>ประเภทรถ</th><th>ค่าเริ่มต้น</th><th>ต่อกิโลเมตร</th></tr>
-      <tr><td>Sedan</td><td>60 บาท</td><td>11 บาท</td></tr>
-      <tr><td>SUV</td><td>70 บาท</td><td>14 บาท</td></tr>
-      <tr><td>รถตู้ (1–12 ท่าน)</td><td>120 บาท</td><td>18 บาท</td></tr>
-      <tr><td>VIP (9 ท่าน)</td><td>120 บาท</td><td>18 บาท</td></tr>
-    </table>
-    <p class="fine muted">เงื่อนไขอาจแตกต่างตามเมือง ระยะทาง และช่วงเวลา</p>
+    <div class="head"><span class="eyebrow">อัตราค่าโดยสาร</span><h2>ราคาเห็นก่อนเรียก ใกล้เคียงแอปเรียกรถทั่วไป</h2><p>อัตรานำร่องเชียงใหม่ พ.ศ. 2569 ราคาต่อคัน ไม่คิดตามจำนวนคน ราคาที่เห็นก่อนยืนยันคือราคาที่จ่าย</p></div>
+    <div class="scroll-x"><table class="table">
+      <tr><th>ประเภทรถ</th><th>ในเมือง เที่ยวเดียว</th><th>สนามบิน ↔ ในเมือง</th><th>เหมารายชั่วโมง</th><th>ครึ่งวัน · เต็มวัน</th></tr>
+      <tr><td><b>สามล้อ</b> 1–3 คน</td><td>เริ่ม 70 บาท<br><span class="fine">40 บาท 2 กม.แรก + 8 บาท/กม.</span></td><td>100–130 บาท</td><td>250 บาท/ชม.<br><span class="fine">ขั้นต่ำ 2 ชม.</span></td><td>1,000 (4 ชม.) · 1,600 (8 ชม.)</td></tr>
+      <tr><td><b>รถแดง เหมาคัน</b> 1–10 คน</td><td>150 บาท<br><span class="fine">ไม่เกิน 10 กม.</span></td><td>200 บาท</td><td>300 บาท/ชม.<br><span class="fine">ขั้นต่ำ 2 ชม.</span></td><td>800 (4 ชม.) · 1,500 (8 ชม.)</td></tr>
+      <tr><td><b>แท็กซี่</b> 1–3 คน · เร็วๆ นี้</td><td>ตามมิเตอร์ เริ่ม 40 บาท</td><td>200 บาท</td><td>240 บาท/ชม.</td><td>950 · 1,800</td></tr>
+      <tr><td><b>รถตู้</b> 1–9 คน · เร็วๆ นี้</td><td>—</td><td>350 บาท</td><td>400 บาท/ชม.<br><span class="fine">ขั้นต่ำ 4 ชม.</span></td><td>1,600 (4 ชม.) · 3,200 (10 ชม.)</td></tr>
+      <tr><td><b>สองแถวประจำทาง</b></td><td colspan="4">ค่าโดยสารต่อคนตามประกาศของจังหวัดและสหกรณ์ จ่ายเงินสดกับคนขับ voyiro ช่วยจองที่นั่งและบอกว่ารถถึงไหนแล้ว ไม่เก็บเพิ่ม</td></tr>
+    </table></div>
+    <p class="fine muted">ราคาฐานก่อนปรับตามช่วงเวลา · ไม่รวมค่าเข้าชม ค่าจอด และทางด่วน (จ่ายตามจริง) · เรียกผ่านโรงแรมหรือร้านพาร์ตเนอร์มีค่าบริการ 20–40 บาท แสดงแยกก่อนยืนยัน · รอเกิน 15 นาที สามล้อ 2 บาท/นาที รถแดง 3 บาท/นาที</p>
+
+    <div class="head" style="margin-top:56px"><span class="eyebrow">ตัวอย่างราคาจากคูเมือง</span><h3>ไปไหน ราคาเท่าไหร่</h3></div>
+    <div class="scroll-x"><table class="table">
+      <tr><th>ปลายทาง</th><th>สามล้อ</th><th>รถแดง</th></tr>
+      <tr><td>นิมมาน / มช.</td><td>70</td><td>150</td></tr>
+      <tr><td>สนามบินเชียงใหม่</td><td>100–130</td><td>200</td></tr>
+      <tr><td>วัดอุโมงค์ หรือ เวียงกุมกาม ไป-กลับ รอ 2 ชม.</td><td>410</td><td>620</td></tr>
+      <tr><td>ดอยสุเทพ ไป-กลับ รอ 1.5 ชม.</td><td>700</td><td>800</td></tr>
+      <tr><td>แม่ริม-ม่อนแจ่ม เต็มวัน</td><td>—</td><td>1,500</td></tr>
+      <tr><td>ดอยอินทนนท์ เต็มวัน</td><td>—</td><td>2,300</td></tr>
+    </table></div>
+
+    <div class="head" style="margin-top:56px"><span class="eyebrow">ราคาตามช่วงเวลา</span><h3>ราคาขยับตามคนเรียกและคนขับที่ว่าง เพื่อให้มีรถรับเร็วที่สุด</h3></div>
+    <div class="grid g4">
+      <div class="card"><span class="tag">22:00–05:00</span><h3>กลางคืน +20%</h3><p>ส่วนเพิ่มส่วนใหญ่เข้าคนขับที่ออกวิ่งดึก</p></div>
+      <div class="card"><span class="tag">จ–ศ 07:30–09:00 · 16:30–19:00</span><h3>เร่งด่วน +10%</h3><p>ช่วงรถติดและคนเรียกเยอะ</p></div>
+      <div class="card"><span class="tag">รถว่างเยอะ</span><h3>ลด 10%</h3><p>ช่วงสบาย ระบบลดราคาให้อัตโนมัติ</p></div>
+      <div class="card"><span class="tag">คนเรียกเยอะ รถน้อย</span><h3>สูงสุด +30%</h3><p>แสดงเหตุผลและตัวคูณก่อนยืนยันทุกครั้ง</p></div>
+    </div>
+    <div class="card" style="margin-top:24px;background:var(--marigold);border-color:var(--marigold)"><h3 style="color:var(--night)">ปุ่ม “ด่วน” +10% · +20% · +30%</h3><p style="color:var(--night)">ถ้ายังไม่มีคนขับรับใน 90 วินาที เลือกเพิ่มเองได้ เงินส่วนนี้เข้าคนขับทั้งหมด</p></div>
+    <p class="fine muted" style="margin-top:16px">ปรับรวมกันไม่เกิน 1.5 เท่า · ราคาล็อกเมื่อยืนยัน ไม่เปลี่ยนระหว่างทาง · ไม่ใช้กับสองแถวประจำทางและแพ็กเกจทริป</p>
   </div>
 </section>
 
 <section id="tours">
   <div class="wrap">
-    <div class="head"><span class="eyebrow">ทริปเหมาคัน</span><h2>เที่ยวกับคนขับท้องถิ่น ราคาเหมาต่อคัน</h2><p>สหกรณ์เป็นผู้จัดคนขับที่รู้จักเส้นทาง ราคาคงที่ต่อคัน ไม่คิดตามจำนวนคน</p></div>
-    <div class="grid g3">
-      <div class="card"><span class="tag">คนท้องถิ่นออกแบบ</span><h3>ทริปโดยคนขับในพื้นที่</h3><ul><li>คนขับและสหกรณ์เป็นผู้สร้างเส้นทางเอง</li><li>รับถึงที่พัก</li></ul></div>
-      <div class="card"><span class="tag">ไม่พาแวะร้าน</span><h3>เที่ยวตามที่ตกลงไว้</h3><ul><li>ไม่มีการพาแวะร้านที่ไม่ได้ตกลงกันไว้</li><li>ปรับจุดแวะกับคนขับได้ก่อนออกเดินทาง</li></ul></div>
-      <div class="card"><span class="tag">ราคาเหมาคัน</span><h3>รู้ราคาก่อนออกเดินทาง</h3><ul><li>ราคาเหมาต่อคัน ตกลงชัดเจนก่อนยืนยัน</li><li>เหมาะกับครอบครัวและกลุ่มเล็ก</li></ul></div>
+    <div class="head"><span class="eyebrow">ทริปและเหมาคัน</span><h2>เที่ยวกับคนขับท้องถิ่น เลือกได้ 2 แบบ</h2><p>คนขับสังกัดสหกรณ์ รับถึงที่พัก รอทุกจุด ราคาต่อคันไม่คิดตามจำนวนคน</p></div>
+    <div class="grid g2">
+      <div class="card"><span class="tag">ยืดหยุ่น</span><h3>เหมารถ + เส้นทางแนะนำ</h3><ul><li>สามล้อ 250 บาท/ชม. · รถแดง 800 บาท/4 ชม.</li><li>เลือกจุดแวะเองระหว่างทาง</li><li>จองในแอปหรือ LINE</li></ul></div>
+      <div class="card feature"><span class="tag">แนะนำสำหรับมาครั้งแรก</span><h3>แพ็กเกจทริป ราคาเดียวทุกช่องทาง</h3><ul><li>โปรแกรมและเวลาชัดเจน เริ่ม 600 บาท/คัน</li><li>ยกเลิกฟรีก่อน 24 ชั่วโมง</li><li>จองตรง ผ่านโรงแรม หรือบริษัททัวร์ ราคาเท่ากัน</li></ul></div>
     </div>
-    <p class="fine muted" style="margin-top:24px">เส้นทางและราคาทริปในโครงการนำร่องเชียงใหม่อยู่ระหว่างจัดทำร่วมกับสหกรณ์</p>
+    <div class="btns" style="margin-top:24px"><a class="btn btn-primary" href="trips.html">ดูทริปทั้งหมด</a></div>
+    <p class="fine muted" style="margin-top:16px">คนขับไม่ทำหน้าที่มัคคุเทศก์ ต้องการไกด์ที่มีบัตรอนุญาตเพิ่มได้ตอนจอง</p>
   </div>
 </section>
 
@@ -96,6 +118,7 @@
       <tr><th>วิธีชำระ</th><th>รายละเอียด</th></tr>
       <tr><td>เงินสด</td><td>จ่ายคนขับตามราคาที่แสดงก่อนเดินทาง</td></tr>
       <tr><td>e-Wallet</td><td>จ่ายผ่านกระเป๋าเงินอิเล็กทรอนิกส์ในระบบ</td></tr>
+      <tr><td>PromptPay / QR</td><td>สแกนจ่ายผ่านแอปธนาคาร แพ็กเกจทริปชำระล่วงหน้าทางนี้</td></tr>
     </table>
   </div>
 </section>
@@ -117,7 +140,10 @@
     <div class="head"><span class="eyebrow">คำถามที่พบบ่อย</span><h2>คำถามจากผู้โดยสาร</h2></div>
     <div class="faq">
       <details><summary>เรียกรถได้ทางไหนบ้าง</summary><p>เรียกผ่านแชท LINE หรือแอป voyiro ในโครงการนำร่องเชียงใหม่ พ.ศ. 2569</p></details>
-      <details><summary>ราคาแพงกว่าเรียกรถข้างทางไหม</summary><p>ราคาคำนวณตามอัตราที่ประกาศและแสดงก่อนเรียกทุกครั้ง ส่วนแบ่งของพาร์ตเนอร์อยู่ในค่าโดยสารเดียวกัน ไม่เก็บเพิ่มจากผู้โดยสาร</p></details>
+      <details><summary>ราคาแพงกว่าแอปเรียกรถอื่นไหม</summary><p>ใกล้เคียงกัน เช่น สามล้อในเมืองเริ่ม 70 บาท รถแดงเหมาคันในเมือง 150 บาท ไปสนามบิน 200 บาท ราคาแสดงก่อนเรียกและล็อกเมื่อยืนยัน ไม่ต้องต่อราคา</p></details>
+      <details><summary>ทำไมบางช่วงราคาสูงขึ้น</summary><p>กลางคืน ชั่วโมงเร่งด่วน หรือช่วงที่คนเรียกมากกว่ารถที่ว่าง ราคาขยับขึ้นเพื่อให้มีคนขับออกมารับ ระบบแสดงเหตุผลก่อนยืนยันทุกครั้ง และปรับรวมไม่เกิน 1.5 เท่า ช่วงรถว่างราคาจะลดลง</p></details>
+      <details><summary>เรียกผ่านโรงแรมแล้วต้องจ่ายเพิ่มไหม</summary><p>มีค่าบริการ 20 บาทในเมือง และ 40 บาทสำหรับสนามบินหรือเหมาวัน แสดงแยกบรรทัดก่อนยืนยัน ค่าบริการนี้เป็นของโรงแรมและพนักงานที่เรียกรถให้</p></details>
+      <details><summary>สองแถวประจำทางจองผ่าน voyiro ได้ไหม</summary><p>ได้ในสายที่สหกรณ์เปิดให้จอง ค่าโดยสารตามประกาศ จ่ายเงินสดกับคนขับ voyiro ไม่เก็บเพิ่ม</p></details>
       <details><summary>รู้ได้อย่างไรว่าคนขับถูกกฎหมาย</summary><p>คนขับทุกคนมีใบขับขี่สาธารณะ รถจดทะเบียนถูกต้อง และสหกรณ์เป็นผู้รับรองสมาชิก หน้าจอแสดงชื่อคนขับ รหัสคนขับ และทะเบียนรถก่อนขึ้นรถ ดูรายละเอียดได้ที่ <a href="safety.html">ความปลอดภัยและกฎหมาย</a></p></details>
       <details><summary>ลืมของไว้บนรถทำอย่างไร</summary><p>แจ้งของหายจากใบเสร็จการเดินทาง ระบบจะติดต่อคนขับและสหกรณ์ต้นสังกัดให้</p></details>
       <details><summary>รองรับภาษาอะไรบ้าง</summary><p>ไทยและอังกฤษ</p></details>
