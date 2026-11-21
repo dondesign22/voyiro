@@ -335,3 +335,23 @@ html[lang="my"] h1,html[lang="my"] h2{line-height:1.5}
 .track.vid .body p{font-size:15px;color:var(--slate)}
 .track.feature video{aspect-ratio:9/16}
 @media (max-width:860px){.track.vid.wide{grid-column:auto}}
+/* เพลงบน YouTube */
+.songs{align-items:start}
+.song{display:grid;border-radius:var(--r-lg);overflow:hidden;background:#fff;border:1px solid var(--line)}
+.song .yt,.song iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--night);position:relative;padding:0;cursor:pointer}
+.song .yt img{width:100%;height:100%;object-fit:cover;display:block}
+.song .ytplay{position:absolute;inset:0;margin:auto;width:58px;height:40px;border-radius:10px;background:rgba(20,18,61,.82)}
+.song .ytplay::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;border-left:14px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent}
+.song .yt:hover .ytplay{background:var(--marigold)}
+.song .yt:hover .ytplay::after{border-left-color:var(--night)}
+.song .body{padding:18px 20px;display:grid;gap:4px}
+.song h3{font-size:18px;color:var(--indigo)}
+.song .sub{font-size:13.5px;color:var(--slate)}
+.dllist{display:grid;gap:10px}
+.dlrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:16px 20px;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line)}
+.dlrow b{display:block;color:var(--night)}
+.dlrow .sub{font-size:13.5px;color:var(--slate)}
+.dlrow .dl{display:flex;gap:10px;flex-wrap:wrap}
+.dlrow .btn{font-size:14px;padding:9px 16px}
+.dlrow.film{background:var(--indigo);color:#fff}
+.dlrow.film b{color:#fff}.dlrow.film .sub{color:#D6D4EC}
